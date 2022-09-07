@@ -129,6 +129,9 @@ svg {
 .front .img3 {
   background-image: url(../img/servicios/4.png);
 }
+.front .img4 {
+  background-image: url(../img/servicios/4.jpg);
+}
 
 .back {
   position: relative;
