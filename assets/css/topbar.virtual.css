@@ -74,6 +74,10 @@
   width: 100%;
   height: 700px;
   z-index: 99;
+        /* modificacion 15/09 GS*/
+  background: linear-gradient(rgba(5,7,8, 0.5), rgba(5, 7, 8, 0.5)), url(../images/fondo.webp) no-repeat center center; 
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-home-services {  
@@ -107,12 +111,21 @@
 
 .page-home .navbar {
   position: absolute;
-  top: auto;
+  top: 0;
   left: 0;
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: rgba(28, 28, 47, 0.673);
+
+  /*  modificacion 15/09 GS */
+
+  /* background-color: rgba(28, 28, 47, 0.673); */
+  /* background-color: rgb(32, 32, 71); */
+  background-color: rgb(19, 19, 61);
+  /* background-color: transparent; */
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+
+
   z-index: 99;
 }
 
@@ -123,12 +136,20 @@
   padding-bottom: 6px;
   background-color: rgb(32, 32, 71);
   z-index: 99;
+
+  /*  modificacion 15/09 GS */
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+
 }
 
 
 .page-home .navbar.floating {
   top: 0;
   background-color: rgb(19, 19, 61);
+
+  /*  modificacion 15/09 GS */
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+
 }
 
 .page-home .caption-header {

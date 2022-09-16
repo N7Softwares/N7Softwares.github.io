@@ -47,15 +47,15 @@ svg {
   min-width: 24px;
   min-height: 24px;
 }
-
-.cardContainer {
+        /* modificacion 15/09 GS*/
+.cardContainer {        
   position: relative;
-  width: 250px;
+  width: 300px;
   height: 500px;
   min-width: 250px;
   min-height: 500px;
   margin: 4px;
-  margin-right: 50px;
+  /* margin-right: 50px; */             /*Si se deja las tarjetas no quedan parejas*/     
   perspective: 1000px;
 }
 
@@ -121,16 +121,16 @@ svg {
   height: 250px;
 }
 .front .img1 {
-  background-image: url(../img/servicios/1.jpg);
+  background-image: url(../img/servicios/1.webp);
 }
 .front .img2 {
-  background-image: url(../img/servicios/2.jpg);
+  background-image: url(../img/servicios/2.webp);
 }
 .front .img3 {
-  background-image: url(../img/servicios/4.png);
+  background-image: url(../img/servicios/3.webp);
 }
 .front .img4 {
-  background-image: url(../img/servicios/4.jpg);
+  background-image: url(../img/servicios/4.webp);
 }
 
 .back {
@@ -294,10 +294,17 @@ h1.w3layouts {
 .content-w3ls {
     width: 70%;
     margin: 0 auto;
-	background-color: rgba(59, 87, 91, 0.57);
+	/* background-color: rgba(59, 87, 91, 0.57); */
+
+        /* modificacion 15/09 GS*/
+    background-color: rgb(19, 19, 61);
 }
-.content-w3ls .content1-agile,.content-w3ls .content2-agile {
-	width:50%;
+        /* modificacion 15/09 GS*/
+/* Eliminacion de ",.content-w3ls .content2-agile" 
+Para eliminar la imagen junto al formulario de contacto
+*/
+.content-w3ls .content1-agile{
+	width:100%;
 	float:left;
 }
 .info-w3l {
@@ -317,7 +324,7 @@ input#username,input#email,textarea#message {
 	font-size:17px;
 	font-weight:normal;
 	color:#fff;
-	text-align:center;
+	/* text-align:center; */
 	background-color: rgba(0, 41, 38, 0.35);
 	border:1px solid rgba(255,255,255,0.5);
 	margin-bottom:20px;
