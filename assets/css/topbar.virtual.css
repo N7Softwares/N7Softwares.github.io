@@ -76,7 +76,6 @@
   z-index: 99;
         /* modificacion 15/09 GS*/
   background: linear-gradient(rgba(5,7,8, 0.5), rgba(5, 7, 8, 0.5)), url(../images/fondo.webp) no-repeat center center; 
-  background-size: cover;
   background-attachment: fixed;
 }
 
