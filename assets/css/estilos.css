@@ -2,6 +2,8 @@
 	--primario: #4143A6;
 	--gris-claro: rgb(255, 255, 255);
 	--sombra: 0 0 13px 0 rgba(185,185,185, .25);
+    --bs-danger: #dc3545;
+
 }
 
 * {
@@ -91,6 +93,8 @@ main {
 	display: grid;
 }
 
+
+
 .contenedor-pregunta {
 	background: rgb(19, 19, 61);
 	padding-top: 40px;
@@ -178,16 +182,24 @@ main {
 
 
 
-        /* modificacion 15/09 GS*/
+/*! =================================================*/
+/*! ============= modificacion 15/09 GS ============= */
+/*! =================================================*/
+
 .contenedor-cardContainer{
 	width:100%; 
 	margin:auto;
 	display:flex; 
 	justify-content:space-evenly;
 }
-.nav-link:hover, .nav-link:focus{
+.nav-link:hover{
 	color:rgb(231, 47, 47) !important;
+	transition:color .3s;
 }
+.nav-link{
+	transition:color  .3s;
+}
+
 
 @media only screen and (max-width: 799px){
 
@@ -202,4 +214,33 @@ main {
 	}
 
 	
+}
+
+/*! =================================================*/
+/*! ============= modificacion 30/09 GS ============= */
+/*! =================================================*/
+
+/* clase para que se coloreen los items al llegar a su respectiva seccion */
+.active-item{           /*Para utilizar en js*/
+    color:var(--bs-danger) !important;
+}
+
+/* Asignando animacion al menu */
+.navbar.floating#navbar {
+    animation: popDown 0.5s;
+}
+/* Animacion para que el menu descienda con una transicion */
+@keyframes popDown {
+    0% {
+      transform: translateY(-100px);
+    }
+  }
+
+
+.list-inline-item a{
+	transition: color .3s;
+}
+.list-inline-item a:hover{
+	text-decoration:none;
+	transition: color .3s;
 }

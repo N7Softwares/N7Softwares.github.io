@@ -57,7 +57,7 @@
   <div>
   <div class="vg-page page-home" id="home">
     <!-- Navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500" id="navbar">
       <div class="container-fluid">
         <a href="" class="navbar-brand photo"><img class="img-fluid" src="assets/img/N7.png" height="100" width="100">
           <div class="glow-wrap">
@@ -71,25 +71,25 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav ml-auto">
             <li>
-              <a href="#home" class="nav-link" data-animate="scrolling">Inicio</a>
+              <a href="#home" class="nav-link" data-animate="scrolling" id="itemInicio">Inicio</a>
             </li>
             <li>
-              <a href="#servicios" class="nav-link" data-animate="scrolling">Servicios</a>
+              <a href="#servicios" class="nav-link" data-animate="scrolling" id="itemServicios">Servicios</a>
             </li>
             <li>
-              <a href="#galeria" class="nav-link" data-animate="scrolling">Galería</a>
+              <a href="#galeria" class="nav-link" data-animate="scrolling" id="itemGaleria">Galería</a>
             </li>
             <li>
-              <a href="#acerca" class="nav-link" data-animate="scrolling">Acerca De</a>
+              <a href="#acerca" class="nav-link" data-animate="scrolling" id="itemAcercaDe">Acerca De</a>
             </li>
             <li>
-              <a href="#equipo" class="nav-link" data-animate="scrolling">Integrantes</a>
+              <a href="#equipo" class="nav-link" data-animate="scrolling" id="itemIntegrantes">Integrantes</a>
             </li>
             <li>
-              <a href="#preguntas" class="nav-link" data-animate="scrolling">Preguntas</a>
+              <a href="#preguntas" class="nav-link" data-animate="scrolling" id="itemPreguntas">Preguntas</a>
             </li>
             <li>
-              <a href="#contacto" class="nav-link" data-animate="scrolling">Contacto</a>
+              <a href="#contacto" class="nav-link" data-animate="scrolling" id="itemContacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -97,10 +97,10 @@
     </div> <!-- End Navbar -->
     <!-- Caption header -->
     <div class="caption-header text-center-lg">
-      <div class="caption-header text-center wow zoomInDown">
-        <h4 class="fw-normal">Bienvenidos</h4>
-        <h1 class="fw-light mb-4" style="font-family: Open Sans, sans-serif; text-align: center; -webkit-text-stroke: 1px rgb(255, 255, 255);">N7</h1>
-        <div class="fw-badge">Somos un equipo de diseñadores talentosos que crean Software, Apps
+      <div class="caption-header text-center ">
+        <h4 class="fw-normal wow fadeInUp">Bienvenidos</h4>
+        <h1 class="fw-light mb-4 wow fadeInRight" style="font-family: Open Sans, sans-serif; text-align: center; -webkit-text-stroke: 1px rgb(255, 255, 255);">N7</h1>
+        <div class="fw-badge wow fadeInLeft">Somos un equipo de diseñadores talentosos que crean Software, Apps
           y Sitios web</div>
       </div>
     </div> <!-- End Caption header -->
@@ -494,22 +494,27 @@
                 <p style="color:rgb(255, 255, 255);" class="mb-1">Socio Fundador</p>
                 <ul class="list-inline mb-0 team-social-links">
                     <li class="list-inline-item">
-                        <a href="#">
+                      <a href="https://miguek22.github.io/" target="_blank" title="Portafolio">
+                          <i class="ti-email"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/migue.gomez.3344/" target="_blank" title="Facebook">
                             <i class="ti-facebook"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://github.com/Miguek22/" target="_blank" title="Github">
                             <i class="ti-github"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://www.instagram.com/miguek_22/" target="_blank" title="Instagram">
                             <i class="ti-instagram"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://linkedin.com/in/miguel-angel-de-jes%C3%BAs-gomez-abb437213" target="_blank" title="Linkedin">
                             <i class="ti-linkedin"></i>
                         </a>
                     </li>
@@ -556,22 +561,22 @@
                     <p style="color:rgb(255, 255, 255);" class="mb-1">Socio Fundador</p>
                     <ul class="list-inline mb-0 team-social-links">
                       <li class="list-inline-item">
-                          <a href="#">
-                              <i class="ti-facebook"></i>
+                          <a href="https://galeanosantiago.github.io/Portfolio_Galeano/" target="_blank" title="Portafolio">
+                              <i class="ti-email"></i>
                           </a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="#">
+                          <a href="https://github.com/GaleanoSantiago" target="_blank" title="Github">
                               <i class="ti-github"></i>
                           </a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="#">
+                          <a href="https://www.instagram.com/__galeanosantiago/" target="_blank" title="Instagram">
                               <i class="ti-instagram"></i>
                           </a>
                       </li>
                       <li class="list-inline-item">
-                          <a href="#">
+                          <a href="https://www.linkedin.com/in/santiago-galeano511/" target="_blank" title="Linkedin">
                               <i class="ti-linkedin"></i>
                           </a>
                       </li>
@@ -729,6 +734,10 @@
   <script src="assets/js/categorias.js"></script>
 
 	<script src="assets/js/preguntasFrecuentes.js"></script>
+
+  <!-- Agregados 30-09 -->
+	<script src="assets/js/efectos-nuevos.js"></script>
+
 </body>
 </html>
 
