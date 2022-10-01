@@ -220,6 +220,9 @@ main {
 /*! ============= modificacion 30/09 GS ============= */
 /*! =================================================*/
 
+
+/* ------------------- Menu de Navegacion -------------------*/
+
 /* clase para que se coloreen los items al llegar a su respectiva seccion */
 .active-item{           /*Para utilizar en js*/
     color:var(--bs-danger) !important;
@@ -236,6 +239,7 @@ main {
     }
   }
 
+/* -------------------Seccion de Integrantes -------------------*/
 
 .list-inline-item a{
 	transition: color .3s;
@@ -263,3 +267,42 @@ a:hover{
 .copyright-agileits>a:hover{
 	color:rgb(33 132 245) !important;
 }
+
+.team-card{
+	transition:1s;
+}
+.team-card:hover{
+	transform:translateY(-8px);
+	transition:1s ease;
+}
+
+/* -------------------Seccion de Servicios -------------------*/
+.card{
+	transition:.4s;
+	
+}
+.card:hover{
+	transition:.4s;
+}
+
+
+/* -------------------Seccion de Inicio -------------------*/
+
+	/* Animacion de flotar - No funciona aun 1/10 */
+.n7-title{
+	animation: flotar 3s ease infinite;
+	animation-delay:1s;
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(9px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
