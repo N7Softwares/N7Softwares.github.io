@@ -244,3 +244,22 @@ main {
 	text-decoration:none;
 	transition: color .3s;
 }
+
+.social-w3-agileits a{
+	transition: color .3s;
+}
+.social-w3-agileits a:hover{
+	text-decoration:none;
+	transition: color .3s;
+}
+
+a{
+	transition: color .3s;
+}
+a:hover{
+	text-decoration: none;
+	transition: color .3s;
+}
+.copyright-agileits>a:hover{
+	color:rgb(33 132 245) !important;
+}
