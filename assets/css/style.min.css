@@ -608,6 +608,7 @@ html:not(.touchevents) .gallery-caption:before, html:not(.touchevents) .gallery-
   transition: all 0.3s ease 0s;
   z-index: -1;
 }
+
 html:not(.touchevents) .gallery-caption:before {
   top: auto;
   height: 3px;
