@@ -7,11 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
   
   <title>Softwares</title>
   <link rel="icon" href="assets/img/icons/N7icon.png">
 
   <!-- <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css'>
   
   <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
   
@@ -251,13 +255,93 @@
     </div>
   </div>
 
+ <!-- Portfolio page -->
+  <div class="text-center wow fadeInUp">
+    <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Proyectos</div>
+  </div>
+  <h1 style="color:rgb(255, 255, 255);" class="text-center fw-normal wow fadeInUp">Galería de Proyectos</h1>
+  <br><h5 style="color:rgb(255, 255, 255);" class="fw-normal text-center wow fadeInUp"><b style="color: #e72f2f;">Aclaración:</b> Haz clic en el cuadro para ver el proyecto. </h5>
+  <br>
+  <div class="gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+    <figure class="gallery-item horizontal" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="https://crud-galeano.000webhostapp.com/app/Registro_Local/index.php" itemprop="contentUrl" data-size="2000x1000"><img class="lazyload lazypreload fadein" src="assets/img/galeria_sistemas/15.jpeg" data-src="assets/img/galeria_sistemas/511.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Control de Stock Básico<br><br> Ver Proyecto</figcaption>
+    </figure>
+    <figure class="gallery-item vertical" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="http://crudpro-galeano.epizy.com/Polirrubro/index.php" itemprop="contentUrl" data-size="1000x2000"><img class="lazyload lazypreload fadein" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%20500%201000'%20%2F%3E" data-src="assets/img/galeria_sistemas/166.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Control de Stock Multifunción<br><br> Ver Proyecto </figcaption>
+    </figure>
+    <figure class="gallery-item" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="http://n7softwares.epizy.com/Inscripci%c3%b3n%20escolar/" itemprop="contentUrl" data-size="1000x1000"><img class="lazyload lazypreload fadein" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%20500%20500'%20%2F%3E" data-src="assets/img/galeria_sistemas/27.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Preinscripción Online<br><br> Ver Proyecto</figcaption>
+    </figure>
+    <figure class="gallery-item horizontal" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="https://miguek22.github.io/Recursos%20Renovables/" itemprop="contentUrl" data-size="2000x1000"><img class="lazyload lazypreload fadein" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%201000%20500'%20%2F%3E" data-src="assets/img/galeria_sistemas/71.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Recursos Renovables<br><br> Ver Proyecto</figcaption>
+    </figure>
+    <figure class="gallery-item vertical" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="http://n7softwares.epizy.com/System2/sistema/" itemprop="contentUrl" data-size="1000x2000"><img class="lazyload lazypreload fadein" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%20500%201000'%20%2F%3E" data-src="assets/img/galeria_sistemas/199.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Control de Stock Multifunción 2.0 <br><br> Ver Proyecto</figcaption>
+    </figure>
+    <figure class="gallery-item" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a target='_blank' href="" itemprop="contentUrl" data-size="1000x1000"><img class="lazyload lazypreload fadein" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%20500%20500'%20%2F%3E" data-src="assets/img/galeria_sistemas/200.png" itemprop="thumbnail" alt="Image description"/></a>
+      <figcaption class="gallery-caption" itemprop="caption description">Tienda Online <br><br> Ver Proyecto</figcaption>
+    </figure>
+  </div>
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!--
+    Background of PhotoSwipe.
+    It's a separate element as animating opacity is faster than rgba().
+    -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden.-->
+    <div class="pswp__scroll-wrap">
+      <!--
+      Container that holds slides.
+      PhotoSwipe keeps only 3 of them in the DOM to save memory.
+      Don't modify these 3 pswp__item elements, data is added later on.
+      -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.-->
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <!-- Controls are self-explanatory. Order can be changed.-->
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR-->
+          <!-- element will get class pswp__preloader--active when preloader is running-->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
    <!-- Portfolio page -->
+   <!--
    <div class="vg-page page-portfolio" id="galeria">
     <div class="container">
       <div class="text-center wow fadeInUp">
         <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Proyectos</div>
       </div>
       <h1 style="color:rgb(255, 255, 255);" class="text-center fw-normal wow fadeInUp">Galería de Proyectos</h1>
+      
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
         <button class="btn btn-theme-outline selected" data-filter="*">Todo</button>
         <button class="btn btn-theme-outline" data-filter=".paginas">Páginas Web</button>
@@ -352,7 +436,8 @@
         </div>
 
      
-      </div> <!-- End gridder -->
+      </div>
+      --> <!-- End gridder -->
     </div>
   </div> <!-- End Portfolio page -->
 
@@ -678,6 +763,10 @@
 
   <!-- Agregados 30-09 -->
 	<script src="assets/js/efectos-nuevos.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.2/lazysizes.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
