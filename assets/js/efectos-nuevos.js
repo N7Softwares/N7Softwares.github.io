@@ -10,6 +10,19 @@ const itemContact = document.getElementById("itemContacto");
 
 // console.log(menu);
 
+/*-------------- Galeria --------------*/
+// gallery-item
+// const galeryAHref = document.querySelector(".gallery-caption");
+// console.log(galeryAHref);
+
+// const aHref=galeryItem.firstChild.nextElementSibling;
+// console.log(aHref);
+
+// galeryAHref.forEach(function(galeryAHref) {
+//     console.log(galeryAHref);
+// });
+
+
 
 addEventListener("scroll",()=>{
         
