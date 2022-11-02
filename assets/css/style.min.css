@@ -481,10 +481,14 @@
   .img-2 {
     height: 500px; } }
 
-.gallery-item a {
+
+/* ------------------------------Estilos de la galeria------------------------------ */
+
+
+.gallery-item .galery-aHref {
   position: relative;
 }
-.gallery-item a:before, .gallery-item a:after {
+.gallery-item .galery-aHref:before, .gallery-item .galery-aHref:after {
   content: "";
   position: absolute;
   top: 0;
@@ -496,19 +500,19 @@
   will-change: border;
   z-index: 10;
 }
-.gallery-item a.active:before, .lazy-images .gallery-item a.image-lazyloaded:before, html:not(.lazy-images) .gallery-item a:before {
+.gallery-item .galery-aHref.active:before, .lazy-images .gallery-item .galery-aHref.image-lazyloaded:before, html:not(.lazy-images) .gallery-item .galery-aHref:before {
   border-width: 0.5rem;
 }
-.gallery-item a.active:after, .lazy-images .gallery-item a.image-lazyloaded:after, html:not(.lazy-images) .gallery-item a:after {
+.gallery-item .galery-aHref.active:after, .lazy-images .gallery-item .galery-aHref.image-lazyloaded:after, html:not(.lazy-images) .gallery-item .galery-aHref:after {
   border-width: 2px;
 }
-.gallery-item a:after {
+.gallery-item .galery-aHref:after {
   margin: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.5);
   -webkit-clip-path: polygon(0 calc(100% - 1rem), 0 100%, 1rem 100%, 1rem 0, 0 0, 0 1rem, 100% 1rem, 100% 0, calc(100% - 1rem) 0, calc(100% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem));
           clip-path: polygon(0 calc(100% - 1rem), 0 100%, 1rem 100%, 1rem 0, 0 0, 0 1rem, 100% 1rem, 100% 0, calc(100% - 1rem) 0, calc(100% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem));
 }
-.gallery-item a:hover:after {
+.gallery-item .galery-aHref:hover:after {
   transform: scale(0.9);
   border-color: white;
 }
@@ -530,7 +534,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (1260px-px: 1020px) {
+
+  /* @media (1260px-px: 1020px) { */
+    /* Editado por error */
+@media (max-width: 1260px) and (min-width: 1020px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -551,7 +558,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
-.gallery-item img, .gallery-item a {
+.gallery-item img, .gallery-item .galery-aHref {
   display: block;
 }
 .vertical.gallery-item {
@@ -561,7 +568,7 @@
   grid-column: span 2;
 }
 
-.gallery-item a {
+.gallery-item .galery-aHref {
   display: block;
 }
 
@@ -588,7 +595,7 @@ html:not(.touchevents) .gallery-caption {
   line-height: 1.25;
   text-align: center;
   box-sizing: border-box;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 @media (min-width: 640px) {
   html:not(.touchevents) .gallery-caption {
@@ -638,3 +645,21 @@ html:not(.touchevents) .gallery-caption:empty {
 }
 
 /*=====  End of RESPONSIVE  ======*/
+
+/* ---------Edicion de Galeano 07/10--------- */
+
+
+.gallery-caption{
+  display:block !important;
+  position:relative;
+  z-index:90;   /*Importante para que funcione*/
+}
+
+.gallery-caption>a{
+  opacity:0;
+  transition:.4s;
+}
+.gallery-item:hover .gallery-caption>a{
+  opacity:1;
+  transition: 1.2s;
+}
