@@ -238,6 +238,28 @@ main {
       transform: translateY(-100px);
     }
   }
+/* -------------------Seccion de Clientes -------------------*/
+
+.clientes{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	background: radial-gradient(#ffffff, #00a8f3); 
+}
+.constructora_comercial{
+	transition: all .4s ease;
+	padding: 20px;
+	margin:auto;
+}
+.constructora_comercial:hover{
+	transform:scale (1.05);
+	transition: all .4s ease;
+	padding: 15px;
+}
 
 /* -------------------Seccion de Integrantes -------------------*/
 
