@@ -1,13 +1,8 @@
 /*--------------Barra de Navegacion--------------*/
 const menu = document.getElementById("navbar");
-const itemInicio = document.getElementById("itemInicio");
-const itemServicios = document.getElementById("itemServicios");
-const itemGaleria = document.getElementById("itemGaleria");
-const itemAbout= document.getElementById("itemAcercaDe");
-const itemIntegrantes= document.getElementById("itemIntegrantes");
-const itemPreguntas= document.getElementById("itemPreguntas");
-const itemContact = document.getElementById("itemContacto");
-const itemClientes = document.getElementById("itemClientes");
+// ----- Almacenar todos los items del navbar -----
+const itemsMenu = document.querySelectorAll(".nav-link");
+
 // console.log(menu);
 
 /*-------------- Galeria --------------*/
@@ -52,48 +47,18 @@ const activarItemsMenu = (tamanoDePantalla)=>{
     let posicionContact=contacto.getBoundingClientRect().top;
     let posicionClientes=clientes.getBoundingClientRect().top;
 
+    let secciones=[posicionInicio, posicionServicios, posicionClientes, posicionGaleria, posicionAcerca, posicionIntegrantes, posicionPreguntas, posicionContact];
 
-    if(posicionInicio<(tamanoDePantalla/3) && posicionServicios>(tamanoDePantalla/3.2)){
-        itemInicio.classList.add("active-item");
-    }else{
-        itemInicio.classList.remove("active-item");
-
-    }
-    if(posicionServicios<(tamanoDePantalla/3.2) && posicionClientes>(tamanoDePantalla/5)){
-        itemServicios.classList.add("active-item");
-    }else{
-        itemServicios.classList.remove("active-item");
-        
-    }
-    if(posicionClientes<(tamanoDePantalla/3.2) && posicionGaleria>(tamanoDePantalla/5)){
-        itemClientes.classList.add("active-item");
-    }else{
-        itemClientes.classList.remove("active-item");
-        
-    }
-    if(posicionGaleria<(tamanoDePantalla/5) && posicionAcerca>(tamanoDePantalla/3.2)){
-        itemGaleria.classList.add("active-item");
-    }else{
-        itemGaleria.classList.remove("active-item");
-    }
-    if(posicionAcerca<(tamanoDePantalla/3.2) && posicionIntegrantes>(tamanoDePantalla/5)){
-        itemAbout.classList.add("active-item");
-    }else{
-        itemAbout.classList.remove("active-item");
-    }
-    if(posicionIntegrantes<(tamanoDePantalla/5) && posicionPreguntas>(tamanoDePantalla/5)){
-        itemIntegrantes.classList.add("active-item");
-    }else{
-        itemIntegrantes.classList.remove("active-item");
-    }
-    if(posicionPreguntas<(tamanoDePantalla/5) && posicionContact>(tamanoDePantalla/5)){
-        itemPreguntas.classList.add("active-item");
-    }else{
-        itemPreguntas.classList.remove("active-item");
-    }
-    if(posicionContact<(tamanoDePantalla/5)){
-        itemContact.classList.add("active-item");
-    }else{
-        itemContact.classList.remove("active-item");
+    for(let i=0; i<secciones.length; i++){
+        if(secciones[i]<(tamanoDePantalla/4) && secciones[i+1]>(tamanoDePantalla/4)){
+            itemsMenu[i].classList.add("active-item");
+        }else{
+            itemsMenu[i].classList.remove("active-item");
+        }
+        if(secciones[secciones.length - 1]<(tamanoDePantalla/4)){
+            itemsMenu[itemsMenu.length - 1].classList.add("active-item");
+        }else{
+            itemsMenu[itemsMenu.length - 1].classList.remove("active-item");
+        }
     }
 }
