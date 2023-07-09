@@ -7,7 +7,7 @@ const itemAbout= document.getElementById("itemAcercaDe");
 const itemIntegrantes= document.getElementById("itemIntegrantes");
 const itemPreguntas= document.getElementById("itemPreguntas");
 const itemContact = document.getElementById("itemContacto");
-
+const itemClientes = document.getElementById("itemClientes");
 // console.log(menu);
 
 /*-------------- Galeria --------------*/
@@ -41,8 +41,7 @@ const activarItemsMenu = (tamanoDePantalla)=>{
     const integrantes = document.getElementById("equipo");
     const preguntas = document.getElementById("preguntas");
     const contacto = document.getElementById("contacto");
-
-
+    const clientes = document.getElementById("clientes");
 
     let posicionInicio=inicio.getBoundingClientRect().top;
     let posicionServicios=servicios.getBoundingClientRect().top;
@@ -51,6 +50,7 @@ const activarItemsMenu = (tamanoDePantalla)=>{
     let posicionIntegrantes=integrantes.getBoundingClientRect().top;
     let posicionPreguntas=preguntas.getBoundingClientRect().top;
     let posicionContact=contacto.getBoundingClientRect().top;
+    let posicionClientes=clientes.getBoundingClientRect().top;
 
 
     if(posicionInicio<(tamanoDePantalla/3) && posicionServicios>(tamanoDePantalla/3.2)){
@@ -59,10 +59,16 @@ const activarItemsMenu = (tamanoDePantalla)=>{
         itemInicio.classList.remove("active-item");
 
     }
-    if(posicionServicios<(tamanoDePantalla/3.2) && posicionGaleria>(tamanoDePantalla/5)){
+    if(posicionServicios<(tamanoDePantalla/3.2) && posicionClientes>(tamanoDePantalla/5)){
         itemServicios.classList.add("active-item");
     }else{
         itemServicios.classList.remove("active-item");
+        
+    }
+    if(posicionClientes<(tamanoDePantalla/3.2) && posicionGaleria>(tamanoDePantalla/5)){
+        itemClientes.classList.add("active-item");
+    }else{
+        itemClientes.classList.remove("active-item");
         
     }
     if(posicionGaleria<(tamanoDePantalla/5) && posicionAcerca>(tamanoDePantalla/3.2)){
