@@ -14,6 +14,28 @@
 	fbq('init', '920112356137255');
 	fbq('track', 'PageView');
 </script>
+<script>
+	const accessToken = 'EAAJyeCZC6vO4BO38JQQRrARZCSe5ZB3NDICYs036holuglSkOGpnAw7zopYwbmNXF3rczN3wPhvchPb64gYdIhLYNQ5jArDQNo9AgDErG5eTbFeZA1TRWWbFmUd5sqnOt4C1VH5wHFuVd5hkaQqPZAgNRCbNw9bdI3Jf57wtm75tUio8b2Mj91iZBYLyfQrP277gZDZD';
+
+	function sendConversionEvent(eventName) {
+	    const apiUrl = `https://graph.facebook.com/v12.0/781143667365347/conversions?access_token=${accessToken}`;
+	
+	    fetch(apiUrl, {
+	        method: 'POST',
+	        headers: {
+	            'Content-Type': 'application/json',
+	        },
+	        body: JSON.stringify({
+	            event_name: eventName,
+	            event_time: Math.floor(Date.now() / 1000),
+	        }),
+	    })
+	    .then(response => response.json())
+	    .then(data => console.log('Respuesta de la API de Facebook:', data))
+	    .catch(error => console.error('Error al enviar evento:', error));
+	}
+
+</script>
 <noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=920112356137255&ev=PageView&noscript=1"
 /></noscript>
