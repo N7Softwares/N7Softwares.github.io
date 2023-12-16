@@ -292,7 +292,7 @@ h1.w3layouts {
     font-family: 'Roboto Condensed', sans-serif;
 }
 .content-w3ls {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 	/* background-color: rgba(59, 87, 91, 0.57); */
 
@@ -319,7 +319,7 @@ h2.wthree {
     text-transform: uppercase;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-input#username,input#email,textarea#message {
+input#username,input#email,textarea#message, input#phone, input#country, input#city, input#category {
 	display:block;
 	font-size:17px;
 	font-weight:normal;
@@ -336,18 +336,23 @@ input#username,input#email,textarea#message {
 	-o-transition:all 0.5s ease-in-out;
 	-ms-transition:all 0.5s ease-in-out;
 }
-input#username:focus,input#email:focus,textarea#message:focus {
+input#username:focus,input#email:focus,textarea#message:focus,input#phone:focus, input#country:focus, input#city:focus, input#category:focus {
 	background-color:rgba(0,0,0,0.5);
 	border:1px solid #fff;
 }
 input#username,input#email {
 	height:45px;
-	width:90.1%;
+	width:100%;
+	padding: 0 25px;
+}
+input#country, input#city, input#category,input#phone {
+    height:45px;
+	width:50% !important;
 	padding: 0 25px;
 }
 textarea#message {
 	height:135px;
-	width:94%;
+	width:100%;
 	padding:15px;
 }
 input::-webkit-input-placeholder {

@@ -164,7 +164,7 @@
       <div class="text-center wow fadeInUp">
         <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Servicios</div>
       </div>
-      <h1 style="color:rgb(255, 255, 255);" class="fw-normal text-center wow fadeInUp">¿Qué Ofrecemos?</h1>
+      <h1 style="color:rgb(255, 255, 255);" class="fw-normal text-center wow fadeInUp">Nuestros servicios</h1>
       <br>
       <h5 style="color:rgb(255, 255, 255);" class="fw-normal text-center wow fadeInUp"><b style="color: #e72f2f;">Aclaración:</b> En todos los servicios se ofrecerá mantenimiento personalizado y documentación de procesos.</h5>
       <div  class="row mt-5 contenedor-cardContainer">
@@ -303,19 +303,36 @@
   </div>
 
    <!-- Clients page -->
-  <div class="text-center wow fadeInUp" id="clientes">
-    <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Clientes</div>
+  <div class="my-5">
+    <div class="text-center wow fadeInUp" id="clientes">
+      <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Clientes</div>
+    </div>
+      <h1 style="color:rgb(255, 255, 255);" class="text-center fw-normal wow fadeInUp">Nuestros Clientes</h1>
+      <div class="d-flex justify-content-center">
+        <div class="px-5">
+          <div class="clientes wow fadeInUp">
+            <img class="constructora_comercial d-flex" src="assets/img/clientes/logo.webp" alt="">
+          </div>
+          <p class="text-light text-center wow fadeInUp">Constructora Comercial<br>S.R.L</p>
+        </div>
+        <div class="px-5">
+          <div class="clientes wow fadeInUp">
+            <img class="constructora_comercial d-flex" src="assets/img/clientes/asfu.png" alt="">
+          </div>
+          <p class="text-light text-center wow fadeInUp">ASFU</p>
+        </div>
+        <div class="px-5">
+          <div class="clientes wow fadeInUp d-flex">
+            <img class="constructora_comercial" src="assets/img/clientes/famagou.png" alt="">
+          </div>
+          <p class="text-light text-center wow fadeInUp">Famago Equipamientos Comerciales</p>
+        </div>
+      </div>
   </div>
-  <h1 style="color:rgb(255, 255, 255);" class="text-center fw-normal wow fadeInUp">Nuestros Clientes</h1>
-  <div class="clientes wow fadeInUp">
-    <a href="https://constructoracomercialsrl.com.ar/" target="_blank"><img class="constructora_comercial" src="assets/img/clientes/logo.webp" alt=""></a>
-  </div>
-  <p class="text-light text-center wow fadeInUp">Constructora Comercial<br>S.R.L</p>
-  <br>
   
 
  <!-- Portfolio page -->
-  <div class="text-center wow fadeInUp" id="galeria">
+  <!-- <div class="text-center wow fadeInUp" id="galeria">
     <div style="color:rgb(255, 255, 255);" class="badge badge-subhead">Proyectos</div>
   </div>
   <h1 style="color:rgb(255, 255, 255);" class="text-center fw-normal wow fadeInUp">Galería de Proyectos</h1>
@@ -358,7 +375,7 @@
         <figcaption class="gallery-caption" itemprop="caption description">Tienda Online <br><br> <a href="#galeria" class="aPrueba">Ver Proyecto</a></figcaption>
       </div>
     </figure>
-  </div>
+  </div> -->
 
   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <!--
@@ -776,10 +793,21 @@
     <div class="content1-agile">
       <div class="info-w3l">
         <h2 class="wthree">Contáctanos</h2>
-        <form autocomplete="off" action="https://formsubmit.co/byakkosoftware@gmail.com" method="POST" class="vg-contact-form">
-          <input type="text" id="username" name="username" placeholder="Nombre" title="Please enter your First Name" required="">
+        <form autocomplete="off" action="https://formsubmit.co/n7softwares@gmail.com" method="POST" class="vg-contact-form">
+          <input type="text" id="username" name="username" placeholder="Nombre y Apellido" title="Please enter your First Name" required="">
           <input type="email" id="email" name="email" placeholder="mail@ejemplo.com" title="Please enter a Valid Email Address" required="">
+          <div class="d-flex">
+            <input type="text" class="mr-1" id="phone" name="phone" placeholder="Teléfono" title="Please enter your First Name" required="">
+            <input type="text" class="ml-1" id="category" name="category" placeholder="Rubro" title="Please enter your First Name" required="">
+          </div>
+          <div class="d-flex">
+            <input type="text" class="mr-1" id="country" name="country" placeholder="País" title="Please enter your First Name" required="">
+            <input type="text" class="ml-1" id="city" name="city" placeholder="Ciudad" title="Please enter your First Name" required="">
+          </div>
           <textarea id="message" name="message" placeholder="Tu Mensaje" title="Please enter Your Comments"></textarea>
+          <div class="mt-2 mb-3">
+            <div class="g-recaptcha" data-sitekey="6Lcn0TMpAAAAANim-056JoJTT6ryKggO_mCwXQDJ"></div>
+          </div>
           <input type="submit" class="sign-in" value="Enviar">
         </form>
         <h4 class="text-center" style="margin-top: 25px; margin-bottom: 25px; color: aliceblue;">VISÍTANOS</h4>
@@ -805,6 +833,7 @@
 </div>
 
 <!-- end advertisement section -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="assets/js/script.js"></script>
 
