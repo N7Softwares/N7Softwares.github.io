@@ -930,7 +930,7 @@ p.copyright-agileits {
 @media (max-width:500px) {
     .background-front, .background-erp{
         background-position: top center;
-        height: 25vh;
+
     }
     .organization{
         padding: 150px 20px;
