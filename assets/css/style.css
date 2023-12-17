@@ -859,13 +859,13 @@ p.copyright-agileits {
     padding-right: 100px;
 }
 .background-front{
-    background-image: url('../img/galeria/2583852.jpg'); 
+    background-image: url('../img/galeria/2583852.webp'); 
     background-size: cover; 
     background-position: top center;
     background-repeat: no-repeat;
 }
 .background-erp{
-    background-image: url('../img/galeria/erp.jpg'); 
+    background-image: url('../img/galeria/erp.webp'); 
     background-size: cover; 
     background-position: top center;
     background-repeat: no-repeat;
@@ -880,7 +880,7 @@ p.copyright-agileits {
     display: none;
 }
 .organization{
-    background-image: url('../img/galeria/bg.png');  
+    background-image: url('../img/galeria/bg.webp');  
     background-attachment: fixed;
     padding: 250px 500px;
 }
