@@ -929,7 +929,6 @@ p.copyright-agileits {
 }
 @media (max-width:500px) {
     .background-front, .background-erp{
-        background-size: contain; 
         background-position: top center;
         height: 25vh;
     }
