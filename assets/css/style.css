@@ -848,4 +848,99 @@ p.copyright-agileits {
     font-size: 13px;
 }
 }
+.text-white-2{
+   color:rgb(255, 255, 255);
+}
+.color-red-led{
+    color: #e72f2f;
+}
+.padding-container-text{
+    padding-top: 0px;
+    padding-right: 100px;
+}
+.background-front{
+    background-image: url('../img/galeria/2583852.jpg'); 
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.background-erp{
+    background-image: url('../img/galeria/erp.jpg'); 
+    background-size: cover; 
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.container-fluid-personalized{
+    width: 100% !important;
+}
+.bg-erp-desk{
+    display: block;
+}
+.bg-erp-mobile{
+    display: none;
+}
+.organization{
+    background-image: url('../img/galeria/bg.png');  
+    background-attachment: fixed;
+    padding: 250px 500px;
+}
+.text-organization{
+    font-size: 25px;
+    font-style: italic;
+}
+.padding.form{
+    padding: 0;
+}
+@media (max-width:1560px) {
+    .organization{
+        padding: 150px 400px;
+    }
+}
+@media (max-width:1440px) {
+    .padding-container-text{
+ 
+        padding-right: 0px;
+    }
+    .background-front, .background-erp{
+        background-position: top right;
+    }
+}
+@media (max-width:1300px) {
+    .padding-container-text{
+        padding-top: 50px;
+    }
+    .organization{
+        padding: 150px 250px;
+    }
+}
+@media (max-width:1200px) {
+    .background-front, .background-erp{
+        height: 50vh;
+    }
+    .bg-erp-desk{
+        display: none;
+    }
+    .bg-erp-mobile{
+        display: block;
+    }
+    .organization{
+        padding: 150px 100px;
+    }
+}
+@media (max-width:500px) {
+    .background-front, .background-erp{
+        background-size: contain; 
+        background-position: top center;
+        height: 25vh;
+    }
+    .organization{
+        padding: 150px 20px;
+    }
+    .text-organization{
+        font-size: 18px;
+    }
+    .padding-form{
+        padding: 0 20px;
+    }
+}
 /*-- /responsive design --*/
