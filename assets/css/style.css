@@ -946,8 +946,20 @@ p.copyright-agileits {
 
 
 .map-container {
-  width: 100%;
-}
+    position: relative;
+    width: 100%;
+  }
+  
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #13133d;
+    opacity: 0.5; 
+  }
+  
 .iframe_class{
     width: 100%;
     height: 100%;
