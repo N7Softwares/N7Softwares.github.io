@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <!-- Meta Pixel Code -->
 <script>
@@ -931,22 +931,54 @@
         <div class="content1-agile">
           <div class="info-w3l">
             <h2 class="wthree">Contáctanos</h2>
-            <form autocomplete="off" action="https://formsubmit.co/n7softwares@gmail.com" method="POST" class="vg-contact-form padding-form" id="contactform">
-              <input type="text" id="username" name="username" placeholder="Nombre y Apellido" title="Please enter your First Name" required="">
-              <input type="email" id="email" name="email" placeholder="mail@ejemplo.com" title="Please enter a Valid Email Address" required="">
+            <form autocomplete="off" action="https://formsubmit.co/e6de426d5e8bec98aab41c47c0f8d5fb" method="POST" class="vg-contact-form padding-form needs-validation" id="contactform" novalidate>
+                <input class="" type="text" id="username" name="username" placeholder="Nombre y Apellido" title="Please enter your First Name" required="">
+                <div class="invalid-feedback" style="font-size: 18px;">
+                  No pueden haber campos vacios
+                </div>
+                <input type="email" id="email" name="email" placeholder="mail@ejemplo.com" title="Please enter a Valid Email Address" required="">
+                <div class="invalid-feedback" style="font-size: 18px;">
+                  No pueden haber campos vacios
+                </div>
               <div class="d-flex">
-                <input type="text" class="mr-1" id="phone" name="phone" placeholder="Teléfono" title="Please enter your First Name" required="">
-                <input type="text" class="ml-1" id="category" name="category" placeholder="Rubro" title="Please enter your First Name" required="">
+                <div class="d-flex flex-column mr-2">
+                  <input type="number" style="width: 100% !important;" id="phone" name="phone" placeholder="Teléfono" title="Please enter your First Name" required="">
+                  <div class="invalid-feedback" style="font-size: 18px;">
+                    Ingrese su telefono
+                  </div>
+                </div>
+                <div class="d-flex flex-column">
+                  <input type="text" style="width: 100% !important;" id="category" name="category" placeholder="Rubro" title="Please enter your First Name" required="">
+                  <div class="invalid-feedback" style="font-size: 18px;">
+                    Ingrese el rubro
+                  </div>
+                </div>
               </div>
               <div class="d-flex">
-                <input type="text" class="mr-1" id="country" name="country" placeholder="País" title="Please enter your First Name" required="">
-                <input type="text" class="ml-1" id="city" name="city" placeholder="Ciudad" title="Please enter your First Name" required="">
+                <div class="d-flex flex-column mr-2">
+                  <input type="text" style="width: 100% !important;" id="country" name="country" placeholder="País" title="Please enter your First Name" required="">
+                  <div class="invalid-feedback" style="font-size: 18px;">
+                    Ingrese su pais
+                  </div>
+                </div>
+                <div class="d-flex flex-column ">
+                  <input type="text" style="width: 100% !important;" id="city" name="city" placeholder="Ciudad" title="Please enter your First Name" required="">
+                  <div class="invalid-feedback" style="font-size: 18px;">
+                    Ingrese su ciudad
+                  </div>
+                </div>
               </div>
               <textarea id="message" name="message" placeholder="Tu Mensaje" title="Please enter Your Comments"></textarea>
+              <div class="invalid-feedback" style="font-size: 18px;">
+                Escriba su mensaje
+              </div>
               <div class="mt-2 mb-3">
                 <div class="g-recaptcha" data-sitekey="6Lcn0TMpAAAAANim-056JoJTT6ryKggO_mCwXQDJ"></div>
+                <div class="invalid-feedback">
+                  Complete el captcha
+                </div>
               </div>
-              <input type="submit" class="sign-in" value="Enviar">
+              <input type="submit" class="sign-in" id="submit" value="Enviar">
             </form>
             <h4 class="text-center" style="margin-top: 25px; margin-bottom: 25px; color: aliceblue;">VISÍTANOS</h4>
             <ul class="social-w3-agileits">
@@ -977,27 +1009,18 @@
 </div>
 
 <!-- end advertisement section -->
-<script>
-  const $form = document.querySelector('#contactform');
 
-$form.addEventListener('submit', handleSubmit);
+  <!-- Script para validar formulario y mostrar alerta -->
+  <script src="assets/js/form.js"></script>
 
-    async function handleSubmit(event) {
-        event.preventDefault();
-        const form = new FormData(this);
-        const response = await fetch(this.action, {
-           method: this.method,
-           body: form,
-           headers: {
-                'Accept': 'application/json'
-           }
-            });
-        if (response.ok) {
-           this.reset();
-           alert('Su correo ha sido enviado');
-        }
-     }
-</script>
+  <!-- Validacion de formulario de Bootstrap -->
+  <script src="assets/js/bootstrap-validations.js"></script>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="assets/js/script.js"></script>
