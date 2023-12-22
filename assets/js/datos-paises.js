@@ -17,6 +17,7 @@ function cargarPaises() {
             paises.forEach(pais => {
                 const option = document.createElement('option');
                 option.value = pais.name;
+                option.dataset.info = pais.iso2;
                 option.textContent = pais.name;
                 selectPais.appendChild(option);
             });
@@ -34,11 +35,13 @@ function cargarAreas() {
     selectArea.disabled= false;
     selectArea.style.pointerEvents = 'auto';
 
-    const paisSeleccionado = selectPais.value;
+    // const paisSeleccionado = selectPais.value;
+    const paisSeleccionado = selectPais.options[selectPais.selectedIndex];
+    const codigoPais = paisSeleccionado.dataset.info;
     // console.log(paisSeleccionado);
      selectArea.innerHTML = '<option value="">Seleccione el area</option>'; //Limpia todas las opciones de areas existentes
 
-     fetch(`${config.paisURL}/${paisSeleccionado}/states`, {headers: {"X-CSCAPI-KEY": config.apiKey}})
+     fetch(`${config.paisURL}/${codigoPais}/states`, {headers: {"X-CSCAPI-KEY": config.apiKey}})
         .then(response => response.json())
         .then(areas => {
             // console.log(areas);
