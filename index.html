@@ -957,15 +957,21 @@
               </div>
               <div class="d-flex">
                 <div class="d-flex flex-column mr-2">
-                  <input type="text" style="width: 100% !important;" id="country" name="country" placeholder="País" title="Please enter your First Name" required="">
+                  <select id="country" class="form-select select" style="font-size: 18px; width: 100% !important;" onchange="cargarAreas()" required>
+                    <option value="">Pais</option>
+                    
+                  </select>
                   <div class="invalid-feedback" style="font-size: 18px;">
                     Ingrese su pais
                   </div>
                 </div>
                 <div class="d-flex flex-column ">
-                  <input type="text" style="width: 100% !important;" id="city" name="city" placeholder="Ciudad" title="Please enter your First Name" required="">
+                  <select id="area" class="form-select select" style="font-size: 18px; width: 100% !important;" required>
+                    <option value="">Area</option>
+                    
+                  </select>
                   <div class="invalid-feedback" style="font-size: 18px;">
-                    Ingrese su ciudad
+                    Ingrese su provincia o estado
                   </div>
                 </div>
               </div>
@@ -1021,6 +1027,9 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Script para mostrar paises y sus provincias -->
+  <script src="assets/js/datos-paises.js"></script>
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
