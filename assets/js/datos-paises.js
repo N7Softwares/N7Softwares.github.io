@@ -16,7 +16,7 @@ function cargarPaises() {
             // console.log(paises);
             paises.forEach(pais => {
                 const option = document.createElement('option');
-                option.value = pais.iso2;
+                option.value = pais.name;
                 option.textContent = pais.name;
                 selectPais.appendChild(option);
             });
@@ -45,7 +45,7 @@ function cargarAreas() {
 
             areas.forEach(area => {
                 const option = document.createElement('option');
-                option.value = area.iso2;
+                option.value = area.name;
                 option.textContent = area.name;
                 selectArea.appendChild(option);
             })
