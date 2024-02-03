@@ -240,7 +240,7 @@ main {
   }
 /* -------------------Seccion de Clientes -------------------*/
 
-.clientes{
+.construcom{
 	overflow:hidden;
 	margin:auto;
 	margin-top:20px;
@@ -248,7 +248,41 @@ main {
 	height: 200px; 
 	width: 200px; 
 	border-radius:100px;
+	border: 1px solid #00a8f3;
 	background: radial-gradient(#ffffff, #00a8f3); 
+}
+.famago{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	border: 1px solid #b1cc02;
+	background: radial-gradient(#ffffff, #b1cc02); 
+}
+.senialeros{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	border: 1px solid #0035f3;
+	background: radial-gradient(#ffffff, #0035f3); 
+}
+.ecoingenio{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	border: 1px solid #75f300;
+	background: radial-gradient(#6e6e6e96, #75f300); 
 }
 .constructora_comercial{
 	transition: all .4s ease;
@@ -261,6 +295,57 @@ main {
 	padding: 15px;
 }
 
+/* Agrega este estilo para el efecto neon */
+	.neon-border-construcom {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00a8f3, 0 0 70px #00a8f3, 0 0 80px #00a8f3, 0 0 100px #00a8f3;
+	}
+	
+	.neon-border-senialeros {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0035f3, 0 0 70px #0035f3, 0 0 80px #0035f3, 0 0 100px #0035f3;
+	}
+	
+	.neon-border-famago {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b1cc02, 0 0 70px #b1cc02, 0 0 80px #b1cc02, 0 0 100px #b1cc02;
+	}
+	
+	.neon-border-ecoingenio {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #75f300, 0 0 70px #75f300, 0 0 80px #75f300, 0 0 100px #75f300;
+	}
+  
+  /* Agrega estos estilos para la animación */
+  @keyframes neon-animation {
+	0% {
+	  opacity: 0.6;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0.6;
+	}
+  }
+  
+  /* Aplica los estilos a cada clase específica */
+  .construcom.neon-border-construcom {
+	border: 1px solid #00a8f3;
+	animation: neon-animation 1.5s linear infinite;
+  }
+  
+  .famago.neon-border-famago {
+	border: 1px solid #b1cc02;
+	animation: neon-animation 1.5s linear infinite;
+  }
+  
+  .senialeros.neon-border-senialeros {
+	border: 1px solid #0035f3;
+	animation: neon-animation 1.5s linear infinite;
+  }
+  
+  .ecoingenio.neon-border-ecoingenio {
+	border: 1px solid #75f300;
+	animation: neon-animation 1.5s linear infinite;
+  }
+  
 /* -------------------Seccion de Integrantes -------------------*/
 
 .list-inline-item a{
