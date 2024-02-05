@@ -413,3 +413,8 @@ a:hover{
     }
 }
 
+.sortlist-class{
+	display: flex;
+    justify-content: center;
+    padding: 40px 0px 0px 0px;
+}
