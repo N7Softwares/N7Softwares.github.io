@@ -284,6 +284,28 @@ main {
 	border: 1px solid #75f300;
 	background: radial-gradient(#6e6e6e96, #75f300); 
 }
+.soledad{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	border: 1px solid #EFA3CC;
+	background: radial-gradient(#ffffff96, #EFA3CC); 
+}
+.lauty{
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	height: 200px; 
+	width: 200px; 
+	border-radius:100px;
+	border: 1px solid #EFA3CC;
+	background: #FFFFFF; 
+}
 .constructora_comercial{
 	transition: all .4s ease;
 	padding: 20px;
@@ -310,6 +332,14 @@ main {
 	
 	.neon-border-ecoingenio {
 		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #75f300, 0 0 70px #75f300, 0 0 80px #75f300, 0 0 100px #75f300;
+	}
+
+	.neon-border-soledad {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #EFA3CC, 0 0 70px #EFA3CC, 0 0 80px #EFA3CC, 0 0 100px #EFA3CC;
+	}
+
+	.neon-border-lauty {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E014A2, 0 0 70px #E014A2, 0 0 80px #E014A2, 0 0 100px #E014A2;
 	}
   
   /* Agrega estos estilos para la animación */
@@ -343,6 +373,16 @@ main {
   
   .ecoingenio.neon-border-ecoingenio {
 	border: 1px solid #75f300;
+	animation: neon-animation 1.5s linear infinite;
+  }
+
+  .soledad.neon-border-soledad {
+	border: 1px solid #EFA3CC;
+	animation: neon-animation 1.5s linear infinite;
+  }
+
+  .lauty.neon-border-lauty {
+	border: 1px solid #EFA3CC;
 	animation: neon-animation 1.5s linear infinite;
   }
   
