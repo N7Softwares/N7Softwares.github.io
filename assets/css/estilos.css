@@ -293,7 +293,7 @@ main {
 	width: 200px; 
 	border-radius:100px;
 	border: 1px solid #EFA3CC;
-	background: radial-gradient(#ffffff96, #EFA3CC); 
+	background: #EFA3CC; 
 }
 .lauty{
 	overflow:hidden;
